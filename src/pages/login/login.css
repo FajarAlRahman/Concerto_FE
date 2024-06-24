@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.p-login {
+  background-color: #680f78;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.p-login .overlap-wrapper {
+  background-color: #680f78;
+  /* width: 1480px;
+  height: 840px; */
+  width: 100%;
+  height: 100vh;
+}
+
+.p-login .overlap {
+  position: relative;
+  /* height: 838px; */
+  /* height: 100vh;  */
+  background-image: url('../../assets/img/Background.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-position: 50% 50%;
+}
+
+.p-login .rectangle {
+  position: absolute;
+  /* width: 1480px;
+  height: 840px; */
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(180deg, rgba(194.21, 0, 174.79, 0.7) 0%, rgba(11, 10, 110, 0.70) 41%);
+}
+
+.p-login .div {
+  position: absolute;
+  width: 523px;
+  height: 451px;
+  top: 140px;
+  left: 459px;
+  background-color: #d8aff899;
+  border-radius: 20px;
+}
+/* -54 */
+.p-login .text-wrapper {
+  position: absolute;
+  top: 171px;
+  left: 672px;
+  font-family: Quicksand;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 29px;
+  letter-spacing: 0;
+  line-height: normal;
+  height: auto;
+  width: auto;
+}
+
+.p-login .group {
+  top: 275px;
+  position: absolute;
+  width: 407px;
+  height: 49px;
+  left: 518px;
+}
+
+.p-login .overlap-group {
+  position: relative;
+  width: 405px;
+  height: 49px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  border: 1px solid;
+  border-color: #d7bcfd;
+  box-shadow: 0px 4px 7px #00000040;
+}
+
+.p-login .input-field {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 15px;
+  padding-left: 24px;
+  font-size: 15px;
+  font-family: Quicksand;
+  color: #959595;
+  outline: none;
+}
+
+.p-login .overlap-group-wrapper {
+  top: 348px;
+  position: absolute;
+  width: 407px;
+  height: 49px;
+  left: 518px;
+}
+
+.p-login .view-hide-fill {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 12px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.p-login .frame,
+.p-login .div-wrapper {
+  padding: 15px 73px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: absolute;
+  top: 496px;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  border: none;
+}
+
+.p-login .frame {
+  left: 518px;
+  background-color: #f5167ecc;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: auto;
+  width: 200px;
+  cursor: pointer;
+}
+
+.p-login .div-wrapper {
+  left: 729px;
+  background-color: #0B0A6E;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 200px;
+  height: auto;
+  cursor: pointer;
+}
+
+.p-login .text-wrapper-4 {
+  position: relative;
+  width: fit-content;
+  font-family: Quicksand;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  width: auto;
+}
+
+.p-login .text-wrapper-5 {
+  position: absolute;
+  width: 193px;
+  top: 424px;
+  left: 518px;
+  font-family: Quicksand;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  height: auto;
+}
+
+.p-login .text-wrapper-6 {
+  position: absolute;
+  width: 122px;
+  top: 424px;
+  left: 801px;
+  font-family: Quicksand;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  height: auto;
+}
+
+.p-login .text-wrapper-7 {
+  position: absolute;
+  width: 185px;
+  top: 196px;
+  left: 632px;
+  font-family: Quantico;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 45px;
+  letter-spacing: 0;
+  line-height: normal;
+  height: auto;
+}

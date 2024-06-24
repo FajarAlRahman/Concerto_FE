@@ -1,0 +1,649 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap'); */
+
+/* * {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Quicksand", Helvetica, sans-serif;
+} */
+
+.cariteman {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+}
+
+/* .container-fluid {
+    background-color: #241ce6;
+} */
+/* Navbar */
+
+.cariteman .navbar {
+    position: relative;
+    z-index: 10;
+    top: 0;
+    height: 80px;
+    background-color: #1F1E95;
+    filter: drop-shadow(0px 4.32px 4.32px rgba(0, 0, 0, 0.25));
+}
+
+.container-fluid .navbar-brand {
+    color: #FFFFFF;
+    font-size: 30px;
+    font-family: Quantico;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+    margin-right: 46px;
+}
+
+.search {
+    margin-right: 70px;
+    width: 384px;
+}
+
+.search .form-control {
+    color: #959595;
+    border-radius: 16px;
+    background-color: #FFFFFF;
+    height: 40px;
+    font-family: Quicksand;
+    font-weight: 700;
+    font-size: 20px;
+    border: none;
+}
+
+.search .input-group-text {
+    width: auto;
+    height: 40px;
+    border-radius: 16px;
+    border: 1px;
+    background-color: #FFFFFF;
+}
+
+.container-fluid .search .input-group {
+    align-items: center;
+}
+
+.collapse .nav-item {
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    display: flex;
+    margin-right: 30px;
+}
+
+.container-fluid .nav-link {
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 600;
+    width: auto;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.cariteman .menu-icon {
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+    margin-bottom: 4px;
+}
+
+.cariteman .groub-icon {
+    height: 25px;
+    width: 25px;
+    margin-right: 5px;
+    margin-bottom: 4px;
+}
+
+.profile {
+    width: auto;
+    height: auto;
+    margin-right: 0;
+}
+
+.menu-profile {
+    width: 55px;
+    height: 55px;
+    margin-right: 0px;
+    border-radius: 50px;
+    margin-bottom: 2px;
+}
+
+/* End Navbar */
+
+/* Navigasi */
+.cariteman .navigasi {
+    color: #33363f;
+    font-family: Quicksand;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 44px;
+    height: auto;
+}
+
+/* End Navigasi */
+
+/* Content */
+.cariteman .content {
+    display: flex;
+    height: auto;
+    width: auto;
+}
+.cariteman .content .container-fluid{
+    height: auto;
+    width: 100%;
+}
+
+/* cariteman.css */
+
+/* General styles for the filter container */
+.cariteman .filter {
+    height: 46px;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    align-items: center;
+}
+
+/* Styles for the first filter */
+.cariteman .overlap-filter1 {
+    height: 46px;
+    position: relative; 
+    width: 168px;
+    background-color: #1F1E95;
+    border-radius: 30px;
+    display: flex;
+    padding: 12px;
+    align-items: center;
+    margin-right: 15px;
+}
+
+/* Styles for the second filter (dropdown) */
+.cariteman .overlap-filter2 {
+    height: 46px;
+    position: relative; 
+    width: 220px;
+    background-color: #1F1E95;
+    color: #fff;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+/* Styles for the select element inside the second filter */
+.cariteman .overlap-filter2 select {
+    background-color: #fff; /* Background color for the dropdown */
+    color: #fff; /* Text color for the dropdown */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* Styles for the options inside the dropdown */
+.cariteman .overlap-filter2 option {
+    background-color: #1F1E95; /* Background color for the options */
+    color: #fff; /* Text color for the options */
+}
+
+
+.cariteman .wrapper-navigasi-teman{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: auto;
+    /* background-color: #1F1E95; */
+}
+
+
+.cariteman .button-teman{
+    width: auto;
+    height: auto;
+    color :#000000;
+    font-family: Quicksand;
+    font-size: 24px;
+    font-weight: 600;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+.cariteman .button-teman-img{
+    width: 40px;
+    height: 40px;
+}
+
+
+.cariteman .list-teman{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    gap: 20px;
+}
+
+.cariteman .box-teman{
+    display: flex;
+    width: auto;
+    height: auto;
+    align-items: center;
+}
+
+.cariteman .profile-teman{
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    background-color: #c200ae;
+    border-radius: 50px;
+}
+
+.cariteman .box-detail-teman{
+    margin-left: 23px;
+    background-color: #1F1E95;
+    width: 100%;
+    height: 100px;
+    border-radius: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.cariteman .wrapper-username{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.cariteman .username-teman{
+    width: auto;
+    height: auto;
+    color :#DF20A3;
+    font-family: Quicksand;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.cariteman .minat-teman{
+    width: auto;
+    height: auto;
+    color :#FFFFFF;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.cariteman .btn-add-teman{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+/* Content */
+
+
+
+
+.cariteman .text-filter1 {
+    color: #FFFFFF;
+    font-family: Quicksand;
+    font-size: 14px;
+    font-weight: 600;
+    align-items: center;
+}
+.cariteman .text-filter2 {
+    color: #FFFFFF;
+    font-family: Quicksand;
+    font-size: 14px;
+    font-weight: 600;
+    align-items: center;
+    position :relative;
+    left : 0px;
+}
+
+
+.cariteman .icon-filter1 {
+    height: 18px;
+    width: 18px;
+    margin-right: 20px;
+    margin-bottom: 2px;
+    margin-left: 15px;
+}
+.cariteman .icon-filter2 {
+    height: 18px;
+    width: 18px;
+    margin-right: 20px;
+    margin-bottom: 2px;
+    margin-left: 10px;
+}
+
+.cariteman .vector {
+    height: 7px;
+    width: 12px;
+    margin-right: 10px;
+}
+
+/* End Filter */
+
+.cariteman .overlap-group-wrapper {
+    height: 46px;
+    left: 263px;
+    position: absolute;
+    top: 245px;
+    width: 168px;
+}
+
+.cariteman .text-wrapper-56 {
+    color: #33363f;
+    font-family: "Quicksand-SemiBold", Helvetica;
+    font-size: 14px;
+    font-weight: 600;
+    left: 38px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 14px;
+}
+
+.cariteman .date-range-fill-66 {
+    height: 17px;
+    left: 18px;
+    position: absolute;
+    top: 14px;
+    width: 17px;
+}
+
+.cariteman .group-21 {
+    height: 46px;
+    left: 446px;
+    position: absolute;
+    top: 245px;
+    width: 168px;
+}
+
+.cariteman .text-wrapper-57 {
+    color: #33363f;
+    font-family: "Quicksand-SemiBold", Helvetica;
+    font-size: 14px;
+    font-weight: 600;
+    left: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 14px;
+}
+
+.cariteman .wallet-fill {
+    height: 12px;
+    left: 17px;
+    position: absolute;
+    top: 17px;
+    width: 12px;
+}
+
+.cariteman .group-22 {
+    height: 60px;
+    left: 602px;
+    position: absolute;
+    top: 1473px;
+    width: 238px;
+}
+
+.cariteman .overlap-2 {
+    border: 1.5px solid;
+    border-color: #c200ae;
+    border-radius: 50px;
+    box-shadow: 0px 10px 50px #3c36f140;
+    height: 60px;
+    position: relative;
+    width: 236px;
+}
+
+.cariteman .text-wrapper-58 {
+    color: #c200ae;
+    font-family: "DM Sans-Bold", Helvetica;
+    font-size: 18px;
+    font-weight: 700;
+    left: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 16px;
+}
+
+.cariteman .overlap-3 {
+    background-image: url(./rectangle-2.svg);
+    background-size: 100% 100%;
+    height: 136px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1440px;
+}
+
+.cariteman .group-23 {
+    height: 32px;
+    left: 765px;
+    position: absolute;
+    top: 49px;
+    width: 123px;
+}
+
+.cariteman .text-wrapper-59 {
+    color: #222222;
+    font-family: "Quicksand-SemiBold", Helvetica;
+    font-size: 24px;
+    font-weight: 600;
+    left: 37px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 3px;
+    white-space: nowrap;
+    width: 84px;
+}
+
+.cariteman .search-2 {
+    background-color: #ffffff;
+    border-radius: 16px;
+    height: 49px;
+    left: 311px;
+    position: absolute;
+    top: 44px;
+    width: 384px;
+}
+
+.cariteman .group-24 {
+    height: 25px;
+    left: 32px;
+    position: relative;
+    top: 12px;
+    width: 190px;
+}
+
+.cariteman .search-instance {
+    height: 24px;
+    left: 0 ;
+    position: absolute;
+    top: 1px ;
+    width: 22px;
+}
+
+.cariteman .text-wrapper-60 {
+    color: #33363f;
+    font-family: "Quicksand-Bold", Helvetica;
+    font-size: 20px;
+    font-weight: 700;
+    left: 45px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    width: 143px;
+}
+
+.cariteman .group-25 {
+    height: 35px;
+    left: 906px;
+    position: absolute;
+    top: 46px;
+    width: 179px;
+}
+
+.cariteman .text-wrapper-61 {
+    color: #222222;
+    font-family: "Quicksand-SemiBold", Helvetica;
+    font-size: 24px;
+    font-weight: 600;
+    left: 47px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 4px;
+}
+
+.cariteman .group-add-fil {
+    height: 35px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 36px;
+}
+
+.cariteman .overlap-group-14 {
+    height: 12px;
+    left: 7px;
+    position: absolute;
+    top: 7px;
+    width: 18px;
+}
+
+.cariteman .ellipse {
+    background-color: #222222;
+    border-radius: 5.98px/5.83px;
+    height: 12px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 12px;
+}
+
+.cariteman .subtract-3 {
+    height: 9px;
+    left: 9px;
+    position: absolute;
+    top: 3px;
+    width: 9px;
+}
+
+.cariteman .overlap-4 {
+    height: 7px;
+    left: 6px;
+    position: absolute;
+    top: 22px;
+    width: 20px;
+}
+
+.cariteman .subtract-4 {
+    height: 6px;
+    left: 9px;
+    position: absolute;
+    top: 0;
+    width: 11px;
+}
+
+.cariteman .rectangle-2 {
+    height: 7px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 14px;
+}
+
+.cariteman .overlap-5 {
+    height: 12px;
+    left: 33px;
+    position: absolute;
+    top: 4px;
+    width: 12px;
+}
+
+.cariteman .vector-2 {
+    height: 12px;
+    left: 4px;
+    position: absolute;
+    top: 0;
+    width: 4px;
+}
+
+.cariteman .vector-3 {
+    height: 4px;
+    left: 0;
+    position: absolute;
+    top: 4px;
+    width: 12px;
+}
+
+.cariteman .ellipse-2 {
+    height: 73px;
+    left: 1287px;
+    object-fit: cover;
+    position: absolute;
+    top: 27px;
+    width: 73px;
+}
+
+.cariteman .text-wrapper-62 {
+    color: #000000;
+    font-family: "Quantico-Bold", Helvetica;
+    font-size: 40px;
+    font-weight: 700;
+    left: 80px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 38px;
+    width: 185px;
+}
+
+.cariteman .group-26 {
+    height: 32px;
+    left: 1103px;
+    position: absolute;
+    top: 49px;
+    width: 156px;
+}
+
+.cariteman .text-wrapper-63 {
+    color: #222222;
+    font-family: "Quicksand-SemiBold", Helvetica;
+    font-size: 24px;
+    font-weight: 600;
+    left: 35px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 2px;
+    white-space: nowrap;
+    width: 119px;
+}
+
+
+

@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Quicksand", Helvetica, sans-serif;
+}
+
+.pembayaran {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+}
+
+.pembayaran .content {
+    display: flex;
+    height: auto;
+    width: auto;
+}
+
+.pembayaran .navigasi {
+    color: #33363f;
+    font-family: Quicksand;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 44px;
+    height: auto;
+    width: auto;
+    /* background-color: #33363f; */
+}
+
+.pembayaran .content-pembayaran{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    height: auto;
+    width: auto;
+}
+
+
+.pembayaran .nama-konser{
+    color: #000;
+    font-family: Quicksand;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.pembayaran .wrapper-lokasi-tgl{
+    display: flex;
+    height: auto;
+    width: auto;
+    align-items: center;
+}
+
+.pembayaran .lokasi-konser{
+    display: flex;
+    flex-direction: row;
+    width: 700px;
+    height: auto;
+}
+
+.pembayaran .icon-lokasi-tgl{
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+.pembayaran .text-lokasi-konser{
+    color: #000;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 500;
+    width: auto;
+    height: auto;
+    word-wrap: break-word;
+}
+
+.pembayaran .tgl-konser{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+}
+
+
+
+
+
+
+/* ////// */
+.pembayaran .breadcrumb {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.pembayaran .breadcrumb span {
+    color: #555;
+    /* Breadcrumb text color */
+}
+
+.pembayaran .breadcrumb span a {
+    color: #000000;
+    /* Breadcrumb link color */
+    text-decoration: none;
+}
+
+.pembayaran .breadcrumb span a:hover {
+    text-decoration: underline;
+    /* Underline link on hover */
+}
+
+.pembayaran .header {
+    padding: 0;
+    width: 344px;
+    height: 57px;
+}
+
+.pembayaran .header h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    padding: 0;
+    margin: 20px 0 0 0;
+}
+
+.pembayaran .text-heading {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.pembayaran .text-heading p {
+    font-size: 24px;
+    line-height: 30px;
+    color: #000000;
+}
+
+/* ////// */
+.pembayaran .payment-time {
+    background-color: #F23A3A;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 0 100px; */
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 12px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-top: 20px;
+}
+
+.pembayaran .payment-time p {
+    font-size: 24px;
+    color: #ffffff;
+    font-family: Quicksand;
+    font-weight: 500;
+}
+
+.pembayaran .timer {
+    font-size: 24px;
+    color: #ffffff;
+    font-family: Quicksand;
+    font-weight: 500;
+    justify-content: flex-end;
+    width: auto;
+    height: auto;
+}
+
+.pembayaran .payment-header {
+    color: #000;
+    font-family: Quicksand;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.pembayaran .payment-header h1 {
+    color: #000;
+    font-family: Quicksand;
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.pembayaran .grid-payment {
+    display: flex;
+    width: 100%;
+    height: auto;
+    /* background-color: #555; */
+    /* grid-template-columns: repeat(2, minmax(0, 1fr)); */
+}
+
+/* .pembayaran .grid-payment-left {
+    grid-template-rows: repeat(7, minmax(0, 1fr));
+} */
+
+.pembayaran .grid-payment-right {
+    /* place-self: end; */
+    justify-content: flex-end;
+    margin-left: 100px;
+}
+
+.pembayaran .card-payment {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 670px;
+    height: 90px;
+    border-radius: 20px;
+    /* padding: 0 30px; */
+    padding-left: 30px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 4px 4px 9px 0px #00000066;
+    margin-top: 30px;
+}
+
+.pembayaran .card-payment.selected {
+    box-shadow: 4px 4px 9px 0px #866BC9;
+    /* Change shadow color when selected */
+}
+
+.pembayaran .card-payment h3 {
+    color: #000;
+    font-family: Quicksand;
+    font-size: 28px;
+    font-weight: 700;
+    width: 700px;
+    height: auto;
+    margin-right: 30px;
+}
+.pembayaran .grid-payment-left .paymentImg{
+    height: 50px;
+    width: 130px;
+}
+
+.pembayaran .payment-detail {
+    /* width: 416px;
+    height: 883px; */
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 4px 4px 9px 0px #00000066;
+    padding: 30px;
+    width: auto;
+    height: auto;
+}
+
+.pembayaran .payment-detail h3 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.pembayaran .payment-detail p {
+    padding: 0;
+    margin: 10px 0;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.pembayaran .devider {
+    width: 100%;
+    height: 1px;
+    background-color: #959595;
+    margin: 20px 0;
+}
+
+.pembayaran .payment-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pembayaran .payment-flex input {
+    padding-left: 10px;
+    width: 248.2px;
+    height: 34.8px;
+    border-radius: 10px;
+    border-color: #959595;
+    border-width: 1px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.pembayaran .payment-button {
+    display: flex;
+    justify-content: center;
+}
+
+.pembayaran .payment-button button {
+    margin-top: 40px;
+    width: 396px;
+    height: 61px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    background-color: #DF20A3;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    font-family: 'Quicksand', sans-serif;
+    border: none;
+    cursor: pointer;
+}
+
+.pembayaran .payment-result {
+    margin: 40px auto 0;
+    padding: 40px 50px;
+    /* width: 940px;
+    height: 815px; */
+    width: auto;
+    height: auto;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    box-shadow: 3px 3px 7px 0px #00000066;
+}
+
+.pembayaran .payment-result-header {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.pembayaran .payment-result-header h1 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+}
+
+.pembayaran .payment-result-body p {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+}
+
+.pembayaran .payment-result-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pembayaran .payment-result-detail span {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: right;
+}
+
+.pembayaran .payment-result-footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pembayaran .payment-result-footer button {
+    width: 496px;
+    height: 59px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    font-family: 'Quicksand', sans-serif;
+    border: none;
+    cursor: pointer;
+}

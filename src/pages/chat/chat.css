@@ -1,0 +1,257 @@
+.chat {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+}
+
+/* Content */
+.teman .content, .teman .left-header {
+  display: flex;
+  height: auto;
+  width: auto;
+}
+
+.teman .header{
+  width: 100%;
+  height: 80px;
+  display: flex;
+  background-color: #1F1E95;
+  padding-inline: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.teman .btn-header{
+  border: none;
+  background: none;
+  width: auto;
+  height: auto;
+}
+
+.teman .icon-header{
+  width: 30px;
+  height: 30px;
+  color: #FFFFFF;
+}
+
+.teman .detail-user{
+  display: flex;
+  width: auto;
+  height: auto;
+  margin-left: 20px;
+  margin-top: 7px;
+}
+
+.teman .left-header .profile-user{
+  margin-top: 5px;
+}
+
+.teman .profile-user{
+  display: flex;
+  width: 45px;
+  height: 45px;
+  border-radius: 55px;
+}
+
+.teman .status-user{
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  margin-left: 20px;
+}
+
+.teman .status-user h3{
+  color :#FFFFFF;
+  font-family: Quicksand;
+  font-size: 20px;
+  font-weight: 700;
+  width: auto;
+  height: auto;
+}
+
+.teman .status-user h5{
+  color :#3ABF38;
+  font-family: Quicksand;
+  font-size: 17px;
+  font-weight: 500;
+  width: auto;
+  height: auto;
+}
+
+/*  chat */
+.teman .chat-area {
+  display: flex;
+  flex-direction: column;
+  width: 100%; 
+  height: 520px;
+  overflow-y: auto;
+  margin-bottom: 40px;
+}
+.teman .chat-area::-webkit-scrollbar{
+  background-color: #D9D9D9;
+  width: 5px;
+}
+
+.teman .chat-area::-webkit-scrollbar-thumb{
+  background-color: #b8b7b7;
+  border-radius: 10px;
+}
+
+.teman .chat-area::-webkit-scrollbar-thumb:hover{
+  background-color: hsl(0, 1%, 65%);
+}
+/* anotherUser */
+.teman .anotherUser-area {
+  display: flex;
+  width: 100%; 
+  height: auto;
+  margin-top: 20px;
+  justify-content: flex-start; 
+}
+.teman .box-anotherUser {
+  display: flex;
+  width: 550px; 
+  height: auto;
+  align-items: flex-end;
+}
+
+.teman .bubble-chat-anotherUser {
+  color: #FFFFFF;
+  font-family: Quicksand;
+  font-size: 15px;
+  font-weight: 500;
+  display: flex;
+  height: auto; 
+  width: auto; 
+  max-width: 100%; 
+  word-wrap: break-word;
+  border-radius: 25px 25px 25px 0px;
+  background-color: #1F1E95;
+  padding: 5px 20px;
+  margin-left: 10px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.teman .bubble-chat-anotherUser p {
+  display: block;
+  width: 100%;
+  height: auto;
+  word-wrap: break-word;
+  margin-bottom: 0px;
+}
+
+/* End anotherUser */
+
+/* User */
+.teman .user-area {
+  display: flex;
+  width: 100%; 
+  height: auto;
+  margin-top: 20px;
+  justify-content: flex-end; 
+}
+.teman .box-user {
+  display: flex;
+  width: 650px;
+  height: auto;
+  align-items: flex-end;
+}
+
+.teman .bubble-chat-user {
+  color: #FFFFFF;
+  font-family: Quicksand;
+  font-size: 15px;
+  font-weight: 500;
+  display: flex;
+  height: auto; 
+  width: auto; 
+  max-width: 100%; 
+  word-wrap: break-word;
+  border-radius: 25px 0px 25px 25px;
+  background-color: #DF20A3;
+  padding: 5px 20px;
+  margin-left: auto;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.teman .bubble-chat-user p {
+  display: block;
+  width: 100%;
+  height: auto;
+  word-wrap: break-word;
+  margin-bottom: 0px;
+
+}
+/* End User */
+
+.teman .waktu-chat {
+  font-size: 12px;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* End  chat */
+
+/* Input */
+.teman .box-input {
+  display: flex;
+  width: 100%;
+  height: auto;
+  /* flex-direction: row; */
+}
+
+.teman .input-group{
+  display: flex;
+  height: auto;
+  width: 1250px;
+  border-radius: 30px;
+  word-wrap: break-word;
+  background-color: #D9D9D9;
+  /* position: sticky; */
+  bottom: 20px;
+  padding: 2px;
+}
+
+.teman .text-chat{
+  display: block;
+  color: #000;
+  font-family: Quicksand;
+  font-size: 24px;
+  font-weight: 500;
+  word-wrap: break-word;
+  width: auto;
+  height: auto;
+}
+
+.teman .btn-chat-bar{
+  width: auto;
+  height: auto;
+  background: none;
+  border: none;
+  border-radius: 30px;
+}
+
+.teman .btn-chat-bar:hover{
+  width: auto;
+  height: auto;
+  background-color: #b8b7b7;
+}
+
+
+.teman .btn-chat-icon{
+  width: 25px;
+  height: 25px;
+  margin-inline: 15px;
+}
+/* End Input */
