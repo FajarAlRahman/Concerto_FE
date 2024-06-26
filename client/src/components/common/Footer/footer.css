@@ -1,0 +1,250 @@
+/* Footer */
+
+.footer {
+    background-color: #1F1E95;
+    height: 438px;
+    /* left: 0; */
+    display: flex;
+    justify-content: flex-end;
+    /* margin-top: 71px; */
+    /* margin-top: auto; */
+    /* top: 1580px; */
+    width: auto;
+}
+
+.footer .overlap-footer {
+    height: 376px;
+    /* left: 98px; */
+    display: flex;
+    /* top: 34px; */
+    width: auto;
+}
+
+.footer .description {
+    margin-top: 35px;
+    height: auto;
+}
+
+.footer .description .footer-brand {
+    color: #FFFFFF;
+    font-size: 40px;
+    font-family: Quantico;
+    font-weight: 700;
+    height: auto;
+    width: auto;
+    text-decoration: none;
+}
+
+.footer .text-description {
+    color: #FFFFFF;
+    font-family: Quicksand;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 10px;
+    line-height: 160%;
+    height: auto;
+    width: 413px;
+
+}
+
+.footer .social-media {
+    display: flex;
+    width: fit-content;
+    height: auto;
+}
+
+.footer .icon-social-media {
+    height: 40px;
+    width: 40px;
+    margin-right: 12px;
+}
+
+.footer .my-account {
+    height: 168px;
+    margin-top: 52px;
+    margin-left: 90px;
+    width: auto;
+    height: auto;
+}
+
+.footer .concerto-1 {
+    color: #FFFFFF;
+    font-family: Quicksand;
+    font-size: 18px;
+    font-weight: 700;
+    height: auto;
+    width: auto;
+}
+
+.footer .my-account .concerto {
+    color: transparent;
+    font-family: Quicksand;
+    font-size: 18px;
+    font-weight: 700;
+    height: auto;
+    width: auto;
+}
+
+.footer .span {
+    color: #FFFFFF;
+}
+
+.footer .titik {
+    color: #ffffff;
+}
+
+.footer .tentang-kami-hubungi {
+    color: #FFFFFF;
+    font-family: Quicksand;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 10px;
+    width: 177px;
+    height: auto;
+}
+
+.footer .stay-in-the-loop {
+    height: auto;
+    /* left: 0; */
+    /* position: absolute; */
+    margin-top: 54px;
+    margin-left: 93px;
+    margin-right: 0px;
+    width: auto;
+    justify-content: flex-end;
+}
+
+.footer .title-text-stay {
+    color: #FFFFFF;
+    font-family: Quicksand;
+    font-size: 18px;
+    font-weight: 700;
+    height: auto;
+}
+
+.footer .text-stay {
+    color: #FFFFFF;
+    font-family: Quicksand;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 25.6px;
+    /* position: absolute; */
+    /* top: 37px; */
+    width: auto;
+    height: auto;
+}
+
+
+.footer .field-email {
+    height: 61px;
+    /* left: 773px; */
+    /* position: absolute; */
+    /* top: 129px; */
+    width: 449px;
+    /* display: flex; */
+}
+
+.footer .input {
+    display: contents;
+}
+
+.footer .text-form {
+    background-color: #f3f3f3;
+    font-family: Quicksand;
+    font-size: 16px;
+    font-weight: 500;
+    height: 60px;
+    /* left: 26px; */
+    /* letter-spacing: 0;
+    line-height: normal; */
+    /* position: absolute; */
+    /* top: 23px; */
+    /* white-space: nowrap; */
+    border-radius: 40px;
+    width: 447px;
+    padding-left: 25px;
+    word-break: 'break-word';
+    /* background-color: #241ce6; */
+}
+
+.footer .field-email .ikuti-sekarang {
+    border-radius: 40px;
+    width: 150px;
+    height: 50px;
+    /* all: unset; */
+    align-items: center;
+    font-family: Quicksand;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #DF20A3;
+    cursor: pointer;
+    padding: 15px;
+    justify-content: center;
+    border: none;
+    box-shadow: 0px 10px 50px #3c36f140;
+    position: relative;
+    /* right: 90px; */
+    bottom: 53.5px;
+    right: 28px;
+    float: right;
+    /* top: 100px; */
+}
+
+.footer .field-email .ikuti-sekarang:hover {
+    background-color: #c91d92;
+}
+
+
+.footer .field-email .ikuti-sekarang {
+    color: #ffffff;
+    font-family: Quicksand;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1.04px;
+    line-height: normal;
+    margin-left: -20.4px;
+    margin-right: -20.4px;
+    margin-top: -1.2px;
+    /* position: relative; */
+    width: fit-content;
+}
+
+.footer .copyright-line {
+    width: 1200px;
+    height: auto;
+    margin-bottom: 20px;
+    border: 1px rgba(255, 255, 255, 0.25) solid;
+    /* position: absolute; */
+    /* bottom: 20px; */
+}
+
+.footer .copyright {
+    height: auto;
+    width: auto;
+    /* bottom: 20; */
+}
+
+
+.footer .copyright-text {
+    color: #FFFFFF;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 500;
+    /* height: 32px; */
+    /* left: 460px; */
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0;
+    line-height: 32px;
+    /* position: absolute; */
+    text-align: center;
+    /* bottom: 10px; */
+    /* width: 367px; */
+    width: auto;
+    line-height: 10px;
+    text-align: center;
+    bottom: 0;
+}
+
+/* End Footer */

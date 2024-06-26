@@ -1,0 +1,117 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap'); */
+
+/* * {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Quicksand", Helvetica, sans-serif;
+} */
+
+.teman {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Navigasi */
+.teman .navigasi {
+  color: #33363f;
+  font-family: Quicksand;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 44px;
+  height: auto;
+}
+
+/* End Navigasi */
+
+/* Content */
+.teman .content {
+  display: flex;
+  height: auto;
+  width: auto;
+}
+
+.teman .content .container-fluid{
+  height: auto;
+  width: 100%;
+}
+
+.teman .list-teman{
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.teman .box-teman{
+  display: flex;
+  width: auto;
+  height: auto;
+  align-items: center;
+}
+
+.teman .profile-teman{
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+  background-color: #c200ae;
+  border-radius: 50px;
+}
+
+.teman .box-detail-teman{
+  margin-left: 23px;
+  background-color: #1F1E95;
+  width: 100%;
+  height: 100px;
+  border-radius: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.teman .wrapper-username{
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.teman .username-teman{
+  width: auto;
+  height: auto;
+  color :#DF20A3;
+  font-family: Quicksand;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.teman .minat-teman{
+  width: auto;
+  height: auto;
+  color :#FFFFFF;
+  font-family: Quicksand;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.teman .btn-add-chat{
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.teman .btn-chat{
+  border: none;
+  background: none;
+  width: auto;
+  height: auto;
+}
+/* Content */

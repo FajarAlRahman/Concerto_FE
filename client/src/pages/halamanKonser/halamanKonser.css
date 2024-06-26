@@ -1,0 +1,372 @@
+* {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Quicksand", Helvetica, sans-serif;
+}
+
+.halamanKonser {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+}
+
+.halamanKonser .content {
+    display: flex;
+    height: auto;
+    width: auto;
+}
+
+.halamanKonser span p ul li{
+    height: auto;
+    width: auto;
+}
+/* Navigasi */
+.halamanKonser .navigasi {
+    color: #33363f;
+    font-family: Quicksand;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 44px;
+    height: auto;
+    width: auto;
+    /* background-color: #33363f; */
+}
+
+/* End Navigasi */
+
+.halamanKonser .content-konser{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    height: auto;
+    width: auto;
+}
+
+.halamanKonser .nama-konser{
+    color: #000;
+    font-family: Quicksand;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.halamanKonser .wrapper-lokasi-tgl{
+    display: flex;
+    height: auto;
+    width: auto;
+    align-items: center;
+}
+
+.halamanKonser .lokasi-konser{
+    display: flex;
+    flex-direction: row;
+    width: 700px;
+    height: auto;
+}
+
+.halamanKonser .icon-lokasi-tgl{
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+.halamanKonser .text-lokasi-konser{
+    color: #000;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 500;
+    width: auto;
+    height: auto;
+    word-wrap: break-word;
+}
+
+.halamanKonser .tgl-konser{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+}
+
+.halamanKonser .text-tgl-konser{
+    color: #000;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 500;
+    width: auto;
+    height: auto;
+}
+
+.halamanKonser .genre-konser{
+    color: #000;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 500;
+    width: auto;
+    height: auto;
+}
+
+.halamanKonser .genre-konser span{
+    font-weight: 700;
+}
+
+.halamanKonser .artis-konser{
+    color: #000;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 500;
+    width: auto;
+    height: auto;
+}
+
+.halamanKonser .artis-konser span{
+    font-weight: 700;
+}
+.halamanKonser .sampul-konser{
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    display: flex;
+    margin-top: 20px;
+    /* background-color: #33363f; */
+}
+.halamanKonser .img-sampul-konser{
+    width: 890px;
+    height: 480px;
+    border-radius: 20px;
+}
+
+.halamanKonser .label-detail-konser{
+    color: #000;
+    font-family: Quicksand;
+    font-size: 30px;
+    font-weight: 700;
+    width: auto;
+    height: auto;
+    margin-top: 50px;
+}
+.halamanKonser .detail-konser{
+    color: #FFFFFF;
+    font-family: Quicksand;
+    font-size: 18px;
+    font-weight: 500;
+    width: auto;
+    height: auto;
+    border-radius: 40px;
+    padding: 50px;
+    background-color: #1F1E95;
+}
+
+.halamanKonser .span-text-konser{
+    color: #DF20A3;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 700;
+    width: auto;
+    height: auto;
+}
+
+.halamanKonser .pilihan-tiket{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+}
+
+.halamanKonser .form-check {
+    width: auto;
+    height: auto;
+    margin-top: 20px;
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 50px;
+    border-radius: 40px;
+    background-color: #1F1E95;
+    cursor: pointer;
+}
+
+.halamanKonser .form-check-input{
+    background-color: #FFFFFF;
+}
+
+.halamanKonser .form-check-input:checked {
+    background-color: #DF20A3;
+}
+
+.halamanKonser .form-check-input:checked::before {
+    background-color: #DF20A3;
+    border-color: #DF20A3; /* Match the border color */
+}
+
+.halamanKonser .form-check.selected {
+    border: 5px solid #DF20A3; /* Warna border untuk card yang dipilih */
+    filter: drop-shadow(0px 7px 5px rgba(0, 0, 0, 0.25));
+}
+
+.halamanKonser .text-harga{
+    color: #FFFFFF;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 500;
+    width: auto;
+    height: auto;
+}
+
+.halamanKonser .form-check-label{
+    color: #FFFFFF;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 500;
+    width: auto;
+    height: auto;
+    margin-left: 20px;
+}
+.halamanKonser .form-check-label .label-tiket{
+    font-weight: 700;
+}
+
+.halamanKonser .form-check-label .harga-tiket{
+    font-weight: 700;
+}
+
+.halamanKonser .wrapper-tiket{
+    margin-top: 50px;
+    display: flex;
+}
+
+.halamanKonser .total{
+    display: flex;
+    flex-direction: column;
+}
+.halamanKonser .label-total{
+    color: #000;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 500;
+    width: auto;
+    height: auto;
+}
+
+.halamanKonser .total-harga{
+    color: #000;
+    font-family: Quicksand;
+    font-size: 30px;
+    font-weight: 700;
+    width: auto;
+    height: auto;
+}
+
+.halamanKonser .icon-btn-pilihan-tiket{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.halamanKonser .btn-pilihan-keranjang{
+    border: 2px solid #DF20A3;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    background-color: #FFFFFF;
+    color: #DF20A3;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 30px;
+    width: 300px;
+    height: 61px;
+}
+
+.halamanKonser .btn-pilihan-keranjang:hover{
+    background-color: hsl(0, 0%, 90%);
+}
+
+
+.halamanKonser .btn-pilihan-beli{
+    background-color: #DF20A3;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: 'Quicksand';
+    font-weight: 700;
+    border-radius: 15px;
+    width: 300px;
+    height: 61px;
+}
+
+.halamanKonser .btn-pilihan-beli:hover {
+    background-color: #c91d92;
+}
+
+
+/* modal */
+.title-modal-hlm-konser {
+    color: #000;
+    font-size: 30px;
+    font-family: 'Quicksand';
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.data-diri-modal, .item-tiket-modal{
+    color: #FFFFFF;
+    font-size: 10px;
+    font-family: 'Quicksand';
+    font-weight: 500;
+    margin-bottom: 17px;
+    background-color: #1F1E95;
+    border-radius: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.data-diri-modal span, .item-tiket-modal span{
+    font-weight: 700;
+}
+
+
+.btn-wrapper-modal{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+}
+
+.btn-close-modal{
+    border: 2px solid #DF20A3;
+    background-color: #FFFFFF;
+    color: #DF20A3;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 30px;
+    width: 180px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+.btn-close-modal:hover{
+    color: #DF20A3;
+    border: 2px solid #DF20A3;
+    background-color: hsl(0, 0%, 90%);
+}
+
+.btn-lanjut-modal{
+    background-color: #DF20A3;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: 'Quicksand';
+    font-weight: 700;
+    border-radius: 15px;
+    width: 180px;
+    height: 50px;
+}
+
+.btn-lanjut-modal:hover{
+    color: #FFFFFF;
+    background-color: #c91d92;
+}
+

@@ -1,0 +1,332 @@
+.konserAnda {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    /* flex: 1; */
+}
+
+.konserAnda .content {
+    display: flex;
+    height: auto;
+    width: auto;
+}
+
+.konserAnda .navigasi {
+    color: #343434;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 44px;
+    height: auto;
+    width: auto;
+    /* background-color: #33363f; */
+}
+
+.konserAnda .header {
+    color: #343434;
+    font-family: Quicksand;
+    font-size: 32px;
+    font-weight: 700;
+    width: 100%;
+    margin-top: 20px;
+    height: auto;
+}
+
+.konserAnda .content-konserAnda{
+    display: flex;
+    /* flex-direction: column; */
+    margin-top: 20px;
+    height: auto;
+    width: auto;
+}
+
+.konserAnda .box-nav{
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* box-shadow: 4px 4px 7px 2px rgba(0, 0, 0, 0.25); */
+    border-radius: 20px;
+    /* padding: 44px; */
+    margin-top: 30px;
+    align-items: center;
+}
+
+.konserAnda .list-menu-konserAnda {
+    width: 100%;
+    height: auto;
+    list-style-type: none;
+    padding: 0;
+}
+
+.konserAnda .menu-konserAnda {
+    color: #343434;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    align-items: center;
+    padding-inline: 10px;
+}
+
+.konserAnda .icon-arrow {
+    width: 20px;
+    height: 20px;
+}
+
+.konserAnda .menu-konserAnda:hover,
+.icon-arrow:hover {
+    color: #FFFFFF;
+    background-color: #DF20A3;
+}
+
+/* End box nav left */
+
+/* Box content right */
+.konserAnda .box-content-menu {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    box-shadow: 4px 4px 7px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    margin-left: 23px;
+    padding-top: 55px;
+    padding-inline: 30px;
+    /* align-items: center; */
+}
+
+.konserAnda .header-menu {
+    color: #343434;
+    font-family: Quicksand;
+    font-size: 32px;
+    font-weight: 700;
+    width: auto;
+    height: auto;
+}
+.konserAnda .tool-menu{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.konserAnda .btn-menu-buat-konser{
+    color: #FFFFFF;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #DF20A3;
+    width: auto;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.konserAnda .btn-menu-buat-konser:hover{
+    color: #FFFFFF;
+    background-color: #c91d92;
+}
+
+.konserAnda .menu-konserAnda.active {
+    color: #FFFFFF;
+    background-color: #DF20A3;
+}
+
+.konserAnda .search{
+    display: flex;
+    height: auto;
+    width: 70%;
+    margin-left: 20px;
+}
+.konserAnda .form-control, .konserAnda .input-group-text{
+    border: 0.5px solid #959595;
+}
+
+
+/* Konser */
+.konserAnda .list-konser-anda{
+    display: flex;
+    width: auto;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-block: 30px;
+    max-height: 800px;
+    overflow-y: auto;
+    padding-bottom: 3px;
+    padding-left: 3px;
+}
+
+.konserAnda .list-konser-anda::-webkit-scrollbar {
+    width: 5px;
+    background-color: #d1c7c7;
+}
+
+.konserAnda .list-konser-anda::-webkit-scrollbar-thumb {
+    background-color: #343434ce;
+}
+
+.konserAnda .list-konser-anda::-webkit-scrollbar-thumb:hover {
+    background-color: #595959;
+}
+
+.konserAnda .list-konser-anda .konser {
+    background-color: #FFFFFF;
+    width: 295px;
+    height: auto;
+    border-radius: 20px;
+    padding: 15px;
+    filter: drop-shadow(0px 7px 5px rgba(0, 0, 0, 0.25));
+}
+
+.konserAnda .list-konser-anda .konser:hover {
+    filter: drop-shadow(0px 7px 5px hsla(241, 67%, 20%, 0.7));
+}
+
+.konserAnda .sampul {
+    height: 172px;
+    width: 265px;
+    border-radius: 20px;
+}
+
+.konserAnda .label-konser {
+    color: #343434;
+    font-size: 20px;
+    font-family: 'Quicksand';
+    font-weight: 700;
+    margin-top: 10px;
+    width: auto;
+    height: auto;
+    word-wrap: break-word;
+}
+
+.konserAnda .tanggal-konser {
+    display: flex;
+    color: #343434;
+    font-size: 15px;
+    font-family: 'Quicksand';
+    font-weight: 700;
+    margin-top: 8px;
+    margin-top: 10px;
+    width: auto;
+    height: auto;
+    word-wrap: break-word;
+}
+
+.konserAnda .konser .icon-konser {
+    color: #DF20A3;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.konserAnda .lokasi-konser{
+    display: flex;
+    color: #343434;
+    font-size: 15px;
+    font-family: 'Quicksand';
+    font-weight: 700;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    width: 280px;
+    height: auto;
+    word-wrap: break-word;
+}
+
+.konserAnda .jumlah-terjual, .konserAnda .jumlah-terjual span{
+    display: flex;
+    color: #343434;
+    font-size: 15px;
+    font-family: 'Quicksand';
+    font-weight: 700;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    width: auto;
+    height: auto;
+    margin-left: 6px;
+}
+
+.konserAnda .jumlah-terjual span{
+    margin-top: 0px;
+    margin-right: 10px;
+}
+
+.konserAnda .konser .footer-konser {
+    display: flex;
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.konserAnda .konser .btn-konser {
+    color: #DF20A3;
+    background: none;
+    border: none;
+    width: auto;
+    height: auto;
+}
+
+.konserAnda .konser .btn-konser:hover {
+    color: #c91d92;
+}
+
+.konserAnda .nothing{
+    display: flex;
+    color: #959595;
+    font-size: 15px;
+    font-family: 'Quicksand';
+    font-weight: 700;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 100%;
+    gap: 10px;
+}
+
+.konserAnda .icon-nothing{
+    width: 70px;
+    height: 70px;
+}
+.konserAnda .nothing p{
+    text-align: center;
+    width: auto;
+    height: auto;
+}
+
+.konserAnda .konser .berakhir{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    justify-content: space-between;
+}
+
+.konserAnda .footer-konser P{
+    color: #F23A3A;
+    font-size: 12px;
+    font-family: 'Quicksand';
+    font-weight: 500;
+    width: auto;
+    height: auto;
+    margin-bottom: 0px;
+}
+
+.konserAnda .warpper-footer{
+    display: flex;
+    width: auto;
+    height: auto;
+    justify-content: flex-end;
+}
+
+/* End Konser */

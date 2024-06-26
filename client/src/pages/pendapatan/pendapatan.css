@@ -1,0 +1,182 @@
+.pendapatan {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    /* flex: 1; */
+}
+
+.pendapatan .content {
+    display: flex;
+    height: auto;
+    width: auto;
+}
+
+.pendapatan .navigasi {
+    color: #343434;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 44px;
+    height: auto;
+    width: auto;
+    /* background-color: #33363f; */
+}
+
+.pendapatan .header {
+    color: #343434;
+    font-family: Quicksand;
+    font-size: 32px;
+    font-weight: 700;
+    width: 100%;
+    margin-top: 20px;
+    height: auto;
+}
+
+.pendapatan .content-pendapatan {
+    display: flex;
+    /* flex-direction: column; */
+    margin-top: 20px;
+    height: auto;
+    width: auto;
+}
+
+.pendapatan .box-nav {
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* box-shadow: 4px 4px 7px 2px rgba(0, 0, 0, 0.25); */
+    border-radius: 20px;
+    /* padding: 44px; */
+    margin-top: 30px;
+    align-items: center;
+}
+
+.pendapatan .list-menu-pendapatan {
+    width: 100%;
+    height: auto;
+    list-style-type: none;
+    padding: 0;
+}
+
+.pendapatan .menu-pendapatan {
+    color: #343434;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    align-items: center;
+    padding-inline: 10px;
+}
+
+.pendapatan .icon-arrow {
+    width: 20px;
+    height: 20px;
+}
+
+.pendapatan .menu-pendapatan:hover,
+.icon-arrow:hover {
+    color: #FFFFFF;
+    background-color: #DF20A3;
+}
+
+.pendapatan .menu-pendapatan.active {
+    color: #FFFFFF;
+    background-color: #DF20A3;
+}
+
+/* End box nav left */
+
+/* Box content right */
+.pendapatan .box-content-menu {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    box-shadow: 4px 4px 7px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    margin-left: 23px;
+    padding-top: 55px;
+    padding-inline: 30px;
+    /* align-items: center; */
+}
+
+.pendapatan .header-menu {
+    color: #343434;
+    font-family: Quicksand;
+    font-size: 32px;
+    font-weight: 700;
+    width: auto;
+    height: auto;
+}
+
+.pendapatan .tool-menu {
+    display: flex;
+    width: 100%;
+    height: auto;
+    gap: 20px;
+}
+
+.pendapatan .box-tool {
+    display: flex;
+    width: auto;
+    height: 100px;
+    border-radius: 20px;
+    border: 1px solid #D9D9D9;
+    align-items: center;
+    padding: 10px;
+}
+
+.pendapatan .icon-tool{
+    width: 60px;
+    height: 60px;
+}
+
+.pendapatan .detail-tool{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    margin-left: 10px;
+}
+
+.pendapatan .box-tool h3, h5{
+    color: #343434;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 600;
+    width: auto;
+    height: auto;
+}
+
+.pendapatan .box-tool h5{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.pendapatan .content-menu-pendapatan{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 600px;
+    justify-content: flex-end;
+}
+
+.pendapatan .content-menu-pendapatan h5{
+    display: flex;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+

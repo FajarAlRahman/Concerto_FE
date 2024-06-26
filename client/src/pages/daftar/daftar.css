@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Custom Scrollbar */
+
+.pendaftaran body{
+  overflow: hidden;
+}
+
+/* Track */
+/* .pendaftaran ::-webkit-scrollbar-track {
+  background: #FFFFFF; 
+} */
+ 
+/* Handle */
+/* .pendaftaran ::-webkit-scrollbar-thumb {
+  background: #1F1E95; 
+  border-radius: 5px;
+
+} */
+
+/* Handle on hover */
+/* .pendaftaran ::-webkit-scrollbar-thumb:hover {
+  background: #1F1E95; 
+} */
+
+/* End Custom Scrollbar */
+
+
+.pendaftaran .icon {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  /* width: 1500px; */
+  height: 838px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.pendaftaran .pendaftaran__child {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: linear-gradient(180deg, rgba(11, 10, 110, 0.70) 72.74%, rgba(166, 0, 103, 0.70) 96.78%);
+  /* width: 1500px; */
+  height: 838px;
+  width: 100%;
+}
+
+.pendaftaran .pendaftaran__item {
+  position: absolute;
+  top: 103px;
+  left: 459px;
+  border-radius: 20px;
+  background-color: rgba(216, 175, 249, 0.6);
+  width: 523px;
+  height: 658px;
+}
+
+.pendaftaran .pendaftaran__text {
+  position: absolute;
+  color: #FFFFFF;
+  font-size: 29px;
+  font-family: 'Quicksand';
+  font-weight: 700;
+  word-wrap: break-word;
+  left: 631px;
+  top: 130px;
+  height: auto;
+  width: auto;
+
+}
+
+.pendaftaran .pendaftaran__text2 {
+  position: absolute;
+  color: #FFFFFF;
+  font-size: 29px;
+  font-family: 'Quicksand';
+  font-weight: 700;
+  word-wrap: break-word;
+  left: 500px;
+  top: 180px;
+  height: auto;
+  width: auto;
+
+}
+
+.pendaftaran .concerto {
+  position: absolute;
+  color: #FFFFFF;
+  font-size: 40px;
+  font-family: 'Quantico';
+  font-weight: 700;
+  word-wrap: break-word;
+  left: 62px;
+  top: 34px;
+  height: auto;
+  width: auto;
+}
+
+.pendaftaran .input-container {
+  position: absolute;
+  left: 518px;
+  width: 405px;
+  height: 49px;
+  margin-bottom: 21px;
+}
+
+.pendaftaran .input-field {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  background-color: #fff;
+  border: 1px solid #d7bcfd;
+  box-sizing: border-box;
+  padding-left: 25px;
+  font-size: 15px;
+  font-family: Quicksand;
+  color: #959595;
+}
+
+.pendaftaran .daftar-sekarang-wrapper {
+  position: absolute;
+  top: 611px;
+  left: 518px;
+  width: 405px;
+  height: 60px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  background-color: #DF20A3;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.pendaftaran .daftar-sekarang-button {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: none;
+  font-size: 15px;
+  font-family: Quicksand;
+  color: #fff;
+  cursor: pointer;
+}
+
+.pendaftaran .sudah-memiliki-akun {
+  position: absolute;
+  top: 693px;
+  left: 612px;
+  font-size: 16px;
+  font-weight: 500;
+  /* background: linear-gradient(#fff, #fff), linear-gradient(#d9d9d9, #d9d9d9), #d9d9d9; */
+  /* -webkit-text-fill-color: transparent; */
+  text-align: center;
+  display: inline-block;
+  width: 165px;
+  height: 17px;
+  color: #FFFFFF;
+}
+
+.pendaftaran .masuk {
+  position: absolute;
+  top: 693px;
+  left: 780px;
+  font-size: 16px;
+  font-weight: 600;
+  /* background: #1F1E95; */
+  cursor: pointer;
+  color: #1F1E95;
+  text-decoration: none;
+  height: auto;
+  width: auto;
+}

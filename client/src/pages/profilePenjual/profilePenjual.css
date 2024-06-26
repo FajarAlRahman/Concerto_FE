@@ -1,0 +1,218 @@
+.profilePenjual {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+}
+
+.profilePenjual .content {
+    display: flex;
+    height: auto;
+    width: auto;
+    margin-top: 41px;
+}
+
+.profilePenjual .container-fluid {
+    display: flex;
+}
+
+/* box profile left */
+.profilePenjual .box-left {
+    width: 512px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    box-shadow: 4px 4px 7px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding: 44px;
+    align-items: center;
+}
+
+.profilePenjual .profile-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 250px;
+}
+
+.profilePenjual .btn-edit-profile {
+    width: 50px;
+    height: 50px;
+    background-color: #DF20A3;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    top: 350px;
+    left: 380px;
+    cursor: pointer;
+}
+
+.profilePenjual .btn-edit-profile:hover {
+    background-color: #c91d92;
+}
+
+.profilePenjual .icon-edit-profile {
+    width: 24px;
+    height: 24px;
+}
+
+.profilePenjual .line {
+    background-color: #959595;
+    width: 100%;
+    height: auto;
+    margin-top: 95px;
+    margin-bottom: 30px;
+    border: 1px rgba(255, 255, 255, 0.25) solid;
+}
+
+.profilePenjual .list-menu-akun {
+    width: 100%;
+    height: auto;
+    list-style-type: none;
+    padding: 0;
+}
+
+.profilePenjual .menu-akun {
+    color: #343434;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.profilePenjual .icon-arrow {
+    width: 20px;
+    height: 20px;
+}
+
+.profilePenjual .menu-akun:hover,
+.icon-arrow:hover {
+    color: #DF20A3;
+    border-bottom: 1px #DF20A3 solid;
+}
+
+/* End box profile left */
+
+/* Box profile right */
+.profilePenjual .box-right {
+    width: 700px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    box-shadow: 4px 4px 7px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    margin-left: 23px;
+    padding-top: 55px;
+    padding-inline: 60px;
+    /* align-items: center; */
+}
+
+.profilePenjual .text-pengaturan {
+    color: #343434;
+    font-family: Quicksand;
+    font-size: 32px;
+    font-weight: 700;
+    width: auto;
+    height: auto;
+}
+
+.profilePenjual .form-profile {
+    width: auto;
+    height: auto;
+    margin-top: 47px;
+}
+
+.profilePenjual .form-item {
+    width: auto;
+    height: auto;
+    margin-bottom: 13px;
+}
+
+.profilePenjual .form-label {
+    color: #343434;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 400;
+    width: auto;
+    height: auto;
+}
+
+.profilePenjual .form-control {
+    color: #343434;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 400;
+    height: 50px;
+}
+
+.profilePenjual .form-btn {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 40px;
+}
+
+.profilePenjual .btn-simpan {
+    color: #FFFFFF;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #DF20A3;
+    width: auto;
+    height: auto;
+    border-radius: 15px;
+}
+
+.profilePenjual .btn-simpan:hover{
+    background-color: #c91d92;
+}
+
+/* profile.css */
+.custom-multiselect {
+    max-width: 100%; /* Adjust this value to your desired width */
+    /* margin-bottom: 1rem; */
+    height: auto;
+}
+
+.custom-multiselect .multiselect-container {
+    width: 300px; /* Adjust this value to your desired width */
+    /* height: 100px; */
+    position: relative;
+}
+
+.custom-multiselect .multiselect-container .option {
+    /* white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; */
+    height: auto;
+    line-height: 40px;
+    padding: 0 10px;
+    overflow-y: auto;
+}
+
+.custom-multiselect .chip {
+    color: #FFFFFF;
+    font-family: Quicksand;
+    font-size: 14px;
+    font-weight: 700;
+    display: inline-block;
+    width: 110px; /* Adjust this value to your desired width */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 5px;
+    background-color: #DF20A3;
+}
+
+/* End box profile right */
