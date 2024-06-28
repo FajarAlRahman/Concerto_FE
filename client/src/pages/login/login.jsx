@@ -75,7 +75,6 @@ export const Login = () => {
                         <button className="div-wrapper" onClick={() => navigate('../daftar')}>
                             <div className="text-wrapper-4" >Daftar</div>
                         </button>
-                        <a class="text-wrapper-5" onClick={() => navigate('../loginPenjual')}>Masuk sebagai penjual</a>
                         <div className="text-wrapper-6">Lupa password</div>
                         <div className="text-wrapper-7">concerto.</div>
                     </div>

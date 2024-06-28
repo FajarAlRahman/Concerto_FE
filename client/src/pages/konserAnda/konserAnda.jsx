@@ -1,17 +1,53 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { CgChevronRight } from "react-icons/cg";
-import { BsBoxArrowUpRight, BsEmojiFrown, BsFillPencilFill, BsFillTrash3Fill, BsSearch } from "react-icons/bs";
+import { BsEmojiFrown, BsSearch } from "react-icons/bs";
+import axios from 'axios';
 import "./konserAnda.css";
 
 import pinImg from '../../assets/img/Pin_fill_konser.svg';
 import dateRangeImg from '../../assets/img/Date_range_fill_konser.svg';
-import sampulKonser from '../../assets/img/sheilaon7.jpeg';
 
-const AllConcerts = () => {
+const loadConcertImage = (imageUrl) => {
+    return `/assets/img/${imageUrl}`;
+};
+
+const formatDate = (dateString) => {
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    return new Date(dateString).toLocaleDateString(undefined, options);
+};
+
+const ConcertList = ({ concerts }) => {
+    return (
+        <div className="list-konser-anda">
+            {concerts.length > 0 ? concerts.map((concert) => (
+                <div className="konser" key={concert.id}>
+                    <img className="sampul" src={loadConcertImage(concert.image_url)} alt={concert.name} />
+                    <div className="label-konser">{concert.name}</div>
+                    <div className="tanggal-konser">
+                        <img className="icon-konser" alt="Date range fill" src={dateRangeImg} />
+                        {formatDate(concert.date)}
+                    </div>
+                    <div className="lokasi-konser">
+                        <img className="icon-konser" alt="Pin fill" src={pinImg} />
+                        {concert.venue}
+                    </div>
+                </div>
+            )) : (
+                <div className="nothing">
+                    <BsEmojiFrown className="icon-nothing" />
+                    <p>
+                        Tidak ada konser saat ini.
+                        Klik Buat Konser untuk menjual tiket konser Anda
+                    </p>
+                </div>
+            )}
+        </div>
+    );
+};
+
+const AllConcerts = ({ concerts }) => {
     const navigate = useNavigate();
-    const concerts = [...Array(10)]; // Change this array length to 0 to simulate no concerts
-
     return (
         <div className="box-content-menu">
             <h1 className="header-menu">Semua Konser</h1>
@@ -26,105 +62,15 @@ const AllConcerts = () => {
                     </div>
                 </form>
             </div>
-            <div className="list-konser-anda">
-                {concerts.length > 0 ? concerts.map((_, index) => (
-                    <div className="konser" key={index}>
-                        <img className="sampul" src={sampulKonser} alt="" />
-                        <div className="label-konser">Sheila On 7</div>
-                        <div className="tanggal-konser">
-                            <img className="icon-konser" alt="Date range fill" src={dateRangeImg} />
-                            04 September 2024
-                        </div>
-                        <div className="lokasi-konser">
-                            <img className="icon-konser" alt="Pin fill" src={pinImg} />
-                            Sahid Raya Hotel & Convention Yogyakarta
-                        </div>
-                        <div className="jumlah-terjual">
-                            <span>1</span>Tiket Terjual
-                        </div>
-                        <div className="footer-konser">
-                            <button type="button" className="btn btn-konser">
-                                <BsFillPencilFill className="icon-konser" />
-                            </button>
-                            <button type="button" className="btn btn-konser">
-                                <BsBoxArrowUpRight className="icon-konser" />
-                            </button>
-                        </div>
-                    </div>
-                )) : (
-                    <div className="nothing">
-                        <BsEmojiFrown className="icon-nothing" />
-                        <p>
-                            Tidak ada konser saat ini.
-                            Klik Buat Konser untuk membuat menjual tiket konser Anda
-                        </p>
-                    </div>
-                )}
-            </div>
+            <ConcertList concerts={concerts} />
         </div>
     );
 };
 
-const Drafts = () => {
+const PublishedConcerts = ({ concerts }) => {
     const navigate = useNavigate();
-    const concerts = [...Array(0)]; // Change this array length to 0 to simulate no concerts
-
-    return (
-        <div className="box-content-menu">
-            <h1 className="header-menu">Draf</h1>
-            <div className="tool-menu">
-                <button type="button" className="btn btn-menu-buat-konser" onClick={() => navigate('../buatKonserPenjual')}>Buat Konser</button>
-                <form className="search d-flex" role="search">
-                    <div className="input-group flex-nowrap">
-                        <span className="input-group-text" id="addon-wrapping">
-                            <BsSearch className="search-icon" />
-                        </span>
-                        <input type="search" className="form-control" placeholder="Cari Konser" aria-label="search" aria-describedby="addon-wrapping" />
-                    </div>
-                </form>
-            </div>
-            <div className="list-konser-anda">
-                {concerts.length > 0 ? concerts.map((_, index) => (
-                    <div className="konser" key={index}>
-                        <img className="sampul" src={sampulKonser} alt="" />
-                        <div className="label-konser">Sheila On 7</div>
-                        <div className="tanggal-konser">
-                            <img className="icon-konser" alt="Date range fill" src={dateRangeImg} />
-                            04 September 2024
-                        </div>
-                        <div className="lokasi-konser">
-                            <img className="icon-konser" alt="Pin fill" src={pinImg} />
-                            Sahid Raya Hotel & Convention Yogyakarta
-                        </div>
-                        <div className="jumlah-terjual">
-                            <span>1</span>Tiket Terjual
-                        </div>
-                        <div className="footer-konser">
-                            <button type="button" className="btn btn-konser">
-                                <BsFillPencilFill className="icon-konser" />
-                            </button>
-                            <button type="button" className="btn btn-konser">
-                                <BsFillTrash3Fill className="icon-konser" />
-                            </button>
-                        </div>
-                    </div>
-                )) : (
-                    <div className="nothing">
-                        <BsEmojiFrown className="icon-nothing" />
-                        <p>
-                            Tidak ada konser saat ini.
-                            Klik Buat Konser untuk membuat menjual tiket konser Anda
-                        </p>
-                    </div>
-                )}
-            </div>
-        </div>
-    );
-};
-
-const Published = () => {
-    const navigate = useNavigate();
-    const concerts = [...Array(5)]; // Change this array length to 0 to simulate no concerts
+    const today = new Date();
+    const publishedConcerts = concerts.filter(concert => new Date(concert.date) >= today);
 
     return (
         <div className="box-content-menu">
@@ -140,48 +86,15 @@ const Published = () => {
                     </div>
                 </form>
             </div>
-            <div className="list-konser-anda">
-                {concerts.length > 0 ? concerts.map((_, index) => (
-                    <div className="konser" key={index}>
-                        <img className="sampul" src={sampulKonser} alt="" />
-                        <div className="label-konser">Sheila On 7</div>
-                        <div className="tanggal-konser">
-                            <img className="icon-konser" alt="Date range fill" src={dateRangeImg} />
-                            04 September 2024
-                        </div>
-                        <div className="lokasi-konser">
-                            <img className="icon-konser" alt="Pin fill" src={pinImg} />
-                            Sahid Raya Hotel & Convention Yogyakarta
-                        </div>
-                        <div className="jumlah-terjual">
-                            <span>1</span>Tiket Terjual
-                        </div>
-                        <div className="footer-konser">
-                            <button type="button" className="btn btn-konser">
-                                <BsFillPencilFill className="icon-konser" />
-                            </button>
-                            <button type="button" className="btn btn-konser">
-                                <BsFillTrash3Fill className="icon-konser" />
-                            </button>
-                        </div>
-                    </div>
-                )) : (
-                    <div className="nothing">
-                        <BsEmojiFrown className="icon-nothing" />
-                        <p>
-                            Tidak ada konser saat ini.
-                            Klik Buat Konser untuk membuat menjual tiket konser Anda
-                        </p>
-                    </div>
-                )}
-            </div>
+            <ConcertList concerts={publishedConcerts} />
         </div>
     );
 };
 
-const Ended = () => {
+const EndedConcerts = ({ concerts }) => {
     const navigate = useNavigate();
-    const concerts = [...Array(3)]; // Change this array length to 0 to simulate no concerts
+    const today = new Date();
+    const endedConcerts = concerts.filter(concert => new Date(concert.date) < today);
 
     return (
         <div className="box-content-menu">
@@ -197,61 +110,35 @@ const Ended = () => {
                     </div>
                 </form>
             </div>
-            <div className="list-konser-anda">
-                {concerts.length > 0 ? concerts.map((_, index) => (
-                    <div className="konser" key={index}>
-                        <img className="sampul" src={sampulKonser} alt="" />
-                        <div className="label-konser">Sheila On 7</div>
-                        <div className="tanggal-konser">
-                            <img className="icon-konser" alt="Date range fill" src={dateRangeImg} />
-                            04 September 2024
-                        </div>
-                        <div className="lokasi-konser">
-                            <img className="icon-konser" alt="Pin fill" src={pinImg} />
-                            Sahid Raya Hotel & Convention Yogyakarta
-                        </div>
-                        <div className="jumlah-terjual">
-                            <span>1</span>Tiket Terjual
-                        </div>
-                        <div className="footer-konser berakhir">
-                            <p>Berakhir pada Senin, 2 April 2024</p>
-                            <div className="warpper-footer">
-                                <button type="button" className="btn btn-konser">
-                                    <BsFillPencilFill className="icon-konser" />
-                                </button>
-                                <button type="button" className="btn btn-konser">
-                                    <BsFillTrash3Fill className="icon-konser" />
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                )) : (
-                    <div className="nothing">
-                        <BsEmojiFrown className="icon-nothing" />
-                        <p>
-                            Tidak ada konser saat ini.
-                            Klik Buat Konser untuk membuat menjual tiket konser Anda
-                        </p>
-                    </div>
-                )}
-            </div>
+            <ConcertList concerts={endedConcerts} />
         </div>
     );
 };
 
 export const KonserAnda = () => {
     const [currentView, setCurrentView] = useState('allConcerts');
+    const [concerts, setConcerts] = useState([]);
+
+    useEffect(() => {
+        const fetchConcerts = async () => {
+            try {
+                const response = await axios.get('http://localhost:3000/seller/concerts', { withCredentials: true });
+                setConcerts(response.data);
+            } catch (error) {
+                console.error('Error fetching concerts', error);
+            }
+        };
+        fetchConcerts();
+    }, []);
 
     const renderContent = () => {
         switch (currentView) {
             case 'allConcerts':
-                return <AllConcerts />;
-            case 'drafts':
-                return <Drafts />;
+                return <AllConcerts concerts={concerts} />;
             case 'published':
-                return <Published />;
+                return <PublishedConcerts concerts={concerts} />;
             case 'ended':
-                return <Ended />;
+                return <EndedConcerts concerts={concerts} />;
             default:
                 return null;
         }
@@ -271,13 +158,6 @@ export const KonserAnda = () => {
                                     onClick={() => setCurrentView('allConcerts')}
                                 >
                                     Semua Konser
-                                    <CgChevronRight className="icon-arrow" />
-                                </li>
-                                <li
-                                    className={`menu-konserAnda ${currentView === 'drafts' ? 'active' : ''}`}
-                                    onClick={() => setCurrentView('drafts')}
-                                >
-                                    Draf
                                     <CgChevronRight className="icon-arrow" />
                                 </li>
                                 <li

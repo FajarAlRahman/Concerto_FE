@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import AppLayout from "../layout/app-layout";
 import AuthLayout from "../layout/auth-layout"; 
-import { Landing } from "../pages/landing/landing";
+import Landing from "../pages/landing/landing";
 import { Login } from "../pages/login/login";
 import Home  from "../pages/home/home";
 import { Jelajah } from "../pages/jelajah/jelajah";
@@ -39,6 +39,7 @@ const AppRouter = () => {
       <Route path="/daftarPenjual" element={<AuthLayout><DaftarPenjual /></AuthLayout>} />
 
       {/* Routes with AppLayout */}
+      
       <Route path="/home" element={<AppLayout><Home /></AppLayout>} />
       <Route path="/jelajah" element={<AppLayout><Jelajah /></AppLayout>} />
       <Route path="/cariTeman" element={<AppLayout><CariTeman /></AppLayout>} />

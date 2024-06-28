@@ -20,14 +20,14 @@ const Navbar = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <form className="search d-flex" role="search">
+              {/* <form className="search d-flex" role="search">
                 <div className="input-group flex-nowrap">
                   <span className="input-group-text" id="addon-wrapping">
                     <img className="search-icon" alt="Search fill" src={searchImg} />
                   </span>
                   <input type="search" className="form-control" placeholder="Cari Konser" aria-label="search" aria-describedby="addon-wrapping" />
                 </div>
-              </form>
+              </form> */}
               <li className="nav-item">
                 <Link className="nav-link" to="/home">
                   <BsFillHouseDoorFill className="menu-icon" alt="menu-icon" />

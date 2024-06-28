@@ -68,7 +68,7 @@ const HalamanKonser = () => {
                 ticketId: selectedTicket.id,
                 quantity: 1
             }, { withCredentials: true });
-            navigate('/keranjang');
+            navigate('/home');
         } catch (error) {
             console.error('Error adding to cart:', error);
         }

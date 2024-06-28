@@ -245,7 +245,7 @@ function Pembayaran() {
                         {/* End Payment resul */}
 
 
-                        {/* <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
+                        <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
                             <div className='modal-body'>
                                 <div className='head-body'>
                                     <FaCheckCircle className="icon-check" color='#DF20A3' size={84} />
@@ -267,7 +267,7 @@ function Pembayaran() {
                                 </div>
                             </div>
                         </Modal>
-                        ; */}
+                        ;
                     </div>
                 </div>
             </div>

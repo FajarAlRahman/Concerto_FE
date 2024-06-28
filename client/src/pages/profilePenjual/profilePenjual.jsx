@@ -1,18 +1,80 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import axios from 'axios';
 import { CgChevronRight } from "react-icons/cg";
-import Multiselect from 'multiselect-react-dropdown';
 import "./profilePenjual.css";
 
 import profileUser from "../../assets/img/profile.jpeg";
 import iconEditProfile from "../../assets/img/Edit_fill.svg";
 
-
 export const ProfilePenjual = () => {
-    const [currentView, setCurrentView] = useState('accountSettings'); // default view
+    const [currentView, setCurrentView] = useState('accountSettings');
+    const [profile, setProfile] = useState({});
+    const [currentPassword, setCurrentPassword] = useState('');
+    const [newPassword, setNewPassword] = useState('');
+    const [confirmNewPassword, setConfirmNewPassword] = useState('');
     const navigate = useNavigate();
 
-  
+    useEffect(() => {
+        fetchProfile();
+    }, []);
+
+    const fetchProfile = async () => {
+        try {
+            const response = await axios.get('http://localhost:3000/profile', { withCredentials: true });
+            setProfile(response.data);
+        } catch (error) {
+            console.error('Error fetching profile', error);
+        }
+    };
+
+    const handleChange = (e) => {
+        setProfile({
+            ...profile,
+            [e.target.id]: e.target.value
+        });
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        try {
+            await axios.post('http://localhost:3000/profile', profile, { withCredentials: true });
+            alert('Profile updated successfully');
+        } catch (error) {
+            console.error('Error updating profile', error);
+        }
+    };
+
+    const handleSubmitPassword = async (e) => {
+        e.preventDefault();
+
+        if (newPassword !== confirmNewPassword) {
+            alert('Password baru dan konfirmasi password tidak cocok');
+            return;
+        }
+
+        try {
+            await axios.post('http://localhost:3000/change-password', { currentPassword, newPassword }, { withCredentials: true });
+            alert('Password updated successfully');
+            // Reset password fields after successful update
+            setCurrentPassword('');
+            setNewPassword('');
+            setConfirmNewPassword('');
+        } catch (error) {
+            console.error('Error updating password', error);
+        }
+    };
+
+    const handlePasswordChange = (e) => {
+        const { id, value } = e.target;
+        if (id === 'currentPassword') {
+            setCurrentPassword(value);
+        } else if (id === 'newPassword') {
+            setNewPassword(value);
+        } else if (id === 'confirmNewPassword') {
+            setConfirmNewPassword(value);
+        }
+    };
 
     const renderContent = () => {
         switch (currentView) {
@@ -20,46 +82,86 @@ export const ProfilePenjual = () => {
                 return (
                     <div className="box-right">
                         <h1 className="text-pengaturan">Pengaturan Akun</h1>
-                        <form className="form-profile" action="" method="">
+                        <form className="form-profile" onSubmit={handleSubmit}>
                             <div className="form-item">
-                                <label htmlFor="namaPenyelenggara" className="form-label">Nama Penyelenggara</label>
-                                <input type="text" className="form-control" id="namaPenyelenggara" placeholder="" />
+                                <label htmlFor="full_name" className="form-label">Nama Penyelenggara</label>
+                                <input
+                                    type="text"
+                                    className="form-control"
+                                    id="full_name"
+                                    value={profile.full_name || ''}
+                                    onChange={handleChange}
+                                />
                             </div>
                             <div className="form-item">
-                                <label htmlFor="info" className="form-label">info</label>
-                                <input type="text" className="form-control" id="info" placeholder="" />
+                                <label htmlFor="bio" className="form-label">Info</label>
+                                <input
+                                    type="text"
+                                    className="form-control"
+                                    id="bio"
+                                    value={profile.bio || ''}
+                                    onChange={handleChange}
+                                />
                             </div>
                             <div className="form-item">
-                                <label htmlFor="namaLengkap" className="form-label">Nama Lengkap</label>
-                                <input type="text" className="form-control" id="namaLengkap" placeholder="" />
+                                <label htmlFor="full_name" className="form-label">Nama Lengkap</label>
+                                <input
+                                    type="text"
+                                    className="form-control"
+                                    id="full_name"
+                                    value={profile.full_name || ''}
+                                    onChange={handleChange}
+                                />
                             </div>
                             <div className="form-item">
                                 <label htmlFor="jabatan" className="form-label">Jabatan</label>
-                                <input type="text" className="form-control" id="jabatan" placeholder="" />
+                                <input
+                                    type="text"
+                                    className="form-control"
+                                    id="jabatan"
+                                    value="Penjual"
+                                    readOnly
+                                />
                             </div>
                             <div className="form-item">
-                                <label htmlFor="provinsi-penjual" className="form-label">Provinsi</label>
-                                <input type="text" className="form-control" id="provinsi-penjual" placeholder="" />
+                                <label htmlFor="province" className="form-label">Provinsi</label>
+                                <input
+                                    type="text"
+                                    className="form-control"
+                                    id="province"
+                                    value={profile.province || ''}
+                                    onChange={handleChange}
+                                />
                             </div>
                             <div className="form-item">
-                                <label htmlFor="kab-kota-penjual" className="form-label">Kabupaten/Kota</label>
-                                <input type="text" className="form-control" id="kab-kota-penjual" placeholder="" />
+                                <label htmlFor="city" className="form-label">Kabupaten/Kota</label>
+                                <input
+                                    type="text"
+                                    className="form-control"
+                                    id="city"
+                                    value={profile.city || ''}
+                                    onChange={handleChange}
+                                />
                             </div>
                             <div className="form-item">
-                                <label htmlFor="kecamatan-penjual" className="form-label">Kecamatan</label>
-                                <input type="text" className="form-control" id="kecamatan-penjual" placeholder="" />
+                                <label htmlFor="email" className="form-label">Email</label>
+                                <input
+                                    type="email"
+                                    className="form-control"
+                                    id="email"
+                                    value={profile.email || ''}
+                                    onChange={handleChange}
+                                />
                             </div>
                             <div className="form-item">
-                                <label htmlFor="alamat-penjual" className="form-label">Alamat Lengkap</label>
-                                <input type="text" className="form-control" id="alamat-penjual" placeholder="" />
-                            </div>
-                            <div className="form-item">
-                                <label htmlFor="email-penjua" className="form-label">Email</label>
-                                <input type="email" className="form-control" id="email-penjua" placeholder="" />
-                            </div>
-                            <div className="form-item">
-                                <label htmlFor="noWa" className="form-label">No WhatsApp</label>
-                                <input type="text" className="form-control" id="noWa" placeholder="" />
+                                <label htmlFor="phone_number" className="form-label">No WhatsApp</label>
+                                <input
+                                    type="text"
+                                    className="form-control"
+                                    id="phone_number"
+                                    value={profile.phone_number || ''}
+                                    onChange={handleChange}
+                                />
                             </div>
                             <div className="form-btn">
                                 <button type="submit" className="btn btn-simpan">Simpan</button>
@@ -71,18 +173,39 @@ export const ProfilePenjual = () => {
                 return (
                     <div className="box-right">
                         <h1 className="text-pengaturan">Atur Password</h1>
-                        <form className="form-profile" action="" method="">
+                        <form className="form-profile" onSubmit={handleSubmitPassword}>
                             <div className="form-item">
                                 <label htmlFor="currentPassword" className="form-label">Masukkan Password Lama</label>
-                                <input type="password" className="form-control" id="currentPassword" placeholder="Password Sekarang" />
+                                <input
+                                    type="password"
+                                    className="form-control"
+                                    id="currentPassword"
+                                    value={currentPassword}
+                                    onChange={handlePasswordChange}
+                                    placeholder="Password Sekarang"
+                                />
                             </div>
                             <div className="form-item">
                                 <label htmlFor="newPassword" className="form-label">Masukkan Password Baru</label>
-                                <input type="password" className="form-control" id="newPassword" placeholder="Password Baru" />
+                                <input
+                                    type="password"
+                                    className="form-control"
+                                    id="newPassword"
+                                    value={newPassword}
+                                    onChange={handlePasswordChange}
+                                    placeholder="Password Baru"
+                                />
                             </div>
                             <div className="form-item">
                                 <label htmlFor="confirmNewPassword" className="form-label">Konfirmasi Password Baru</label>
-                                <input type="password" className="form-control" id="confirmNewPassword" placeholder="Konfirmasi Password Baru" />
+                                <input
+                                    type="password"
+                                    className="form-control"
+                                    id="confirmNewPassword"
+                                    value={confirmNewPassword}
+                                    onChange={handlePasswordChange}
+                                    placeholder="Konfirmasi Password Baru"
+                                />
                             </div>
                             <div className="form-btn">
                                 <button type="submit" className="btn btn-simpan">Perbarui Password</button>
@@ -120,10 +243,11 @@ export const ProfilePenjual = () => {
                             </li>
                         </ul>
                     </div>
-
                     {renderContent()}
                 </div>
             </div>
         </div>
     );
-}
+};
+
+export default ProfilePenjual;

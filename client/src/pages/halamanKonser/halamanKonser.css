@@ -207,16 +207,7 @@
     filter: drop-shadow(0px 7px 5px rgba(0, 0, 0, 0.25));
 }
 
-.halamanKonser .text-harga{
-    color: #FFFFFF;
-    font-family: Quicksand;
-    font-size: 20px;
-    font-weight: 500;
-    width: auto;
-    height: auto;
-}
-
-.halamanKonser .form-check-label{
+.halamanKonser .form-check-label {
     color: #FFFFFF;
     font-family: Quicksand;
     font-size: 20px;
