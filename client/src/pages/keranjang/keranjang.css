@@ -1,0 +1,227 @@
+
+.keranjang {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+}
+
+/* Navigasi */
+.keranjang .navigasi {
+  color: #33363f;
+  font-family: Quicksand;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 44px;
+  height: auto;
+  width: auto;
+}
+
+/* End Navigasi */
+
+/* Content */
+.keranjang .content {
+  display: flex;
+  height: auto;
+  width: auto;
+}
+.keranjang .content .container-fluid{
+  height: auto;
+  width: 100%;
+}
+
+.keranjang .title{
+  color: #000;
+  font-family: Quicksand;
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 34px;
+  width: auto;
+  height: auto;
+}
+.keranjang .content-keranjang{
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.keranjang .line {
+  background-color: #95959541;
+  width: 100%;
+  height: auto;
+  margin-top: 17px;
+  border: 1px rgba(255, 255, 255, 0.25) solid;
+}
+
+.keranjang .table{
+  color: #343434;
+  font-family: Quicksand;
+  font-size: 20px;
+  font-weight: 700;
+  width: auto;
+  height: auto;
+}
+
+.keranjang .sampul-konser{
+  width: 130px;
+  height: 90px;
+  border-radius: 20px;
+}
+
+.keranjang .detail-item{
+  display: flex;
+  width: auto;
+  height: auto;
+  align-content: center;
+}
+
+.keranjang .item-table{
+  align-content: center;
+}
+
+.keranjang .detail-item h3{
+  color: #343434;
+  font-family: Quicksand;
+  font-size: 20px;
+  font-weight: 700;
+  width: auto;
+  height: auto;
+  margin-left: 20px;
+}
+
+.keranjang .table td{
+  width: auto;
+  height: auto;
+  align-items: center;
+}
+.keranjang .table th{
+  width: auto;
+  height: auto;
+}
+
+.keranjang .icon-table{
+  width: 20px;
+  height: 20px;
+  border: none;
+  background: none;
+}
+
+.keranjang .count{
+  margin-inline: 10px;
+}
+
+/* custom checkbox */
+/* Hide default checkbox */
+.custom-checkbox input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  width: auto;
+  height: auto;
+}
+
+/* Create a custom checkbox */
+.custom-checkbox .checkmark {
+  position: relative;
+  height: 20px;
+  width: 20px;
+  background-color: #c9c6c6;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+/* Change background color when checked */
+.custom-checkbox input[type="checkbox"]:checked + .checkmark {
+  background-color: #DF20A3;
+}
+
+/* Add a tick mark when checked */
+.custom-checkbox .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark::after {
+  display: block;
+}
+
+.custom-checkbox .checkmark::after {
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/* end custom checkbox */
+
+.keranjang h3{
+  color: #343434;
+  font-family: Quicksand;
+  font-size: 20px;
+  font-weight: 700;
+  width: auto;
+  height: auto;
+}
+
+.keranjang h2{
+  color: #343434;
+  font-family: Quicksand;
+  font-size: 32px;
+  font-weight: 700;
+  width: auto;
+  height: auto;
+  margin-top: 7px;
+}
+
+.keranjang .pilih-semua{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-end;
+  margin-bottom: 30px;
+}
+
+.keranjang .custom-checkbox{
+  width: auto;
+  margin-left: 10px;
+}
+
+.keranjang .sub-total, .keranjang .biaya-admin, .keranjang .total-pembayaran{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  height: auto;
+}
+
+.keranjang .btn-beli {
+  color: #FFFFFF;
+  font-family: Quicksand;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: #DF20A3;
+  width: auto;
+  height: auto;
+  border-radius: 15px;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.keranjang .btn-beli:hover{
+  background-color: #c91d92;
+}
+
+.keranjang .wrapper{
+  display: flex;
+  justify-content: flex-end;
+  height: auto;
+  width: auto;
+}

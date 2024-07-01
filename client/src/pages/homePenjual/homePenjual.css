@@ -1,0 +1,106 @@
+.homePenjual {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  /* flex: 1; */
+}
+
+.homePenjual .content {
+  display: flex;
+  height: auto;
+  width: auto;
+}
+
+.homePenjual .content-main{
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  height: auto;
+  width: auto;
+}
+
+.homePenjual .text {
+  color: #33363f;
+  font-family: Quicksand;
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: 10px;
+  height: auto;
+  display: flex;
+  width: auto;
+}
+
+.homePenjual .text span{
+  font-weight: 700;
+  width: auto;
+  margin-right: 5px;
+}
+
+.homePenjual .box-continer{
+  display: flex;
+  margin-top: 30px;
+  width: auto;
+  justify-content: space-between;
+}
+
+.homePenjual .box{
+  display: flex;
+  flex-direction: column;
+  width: 570px;
+  height: 454px;
+  border-radius: 20px;
+  align-items: center;
+  box-shadow: 4px 4px 11px 0px rgba(0, 0, 0, 0.25);
+}
+.homePenjual .box-1{
+  margin-right: 74px;
+}
+
+.homePenjual .title-box, .homePenjual .box p{
+  color: #33363f;
+  font-family: Quicksand;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 50px;
+  width: auto;
+  height: auto;
+}
+
+.homePenjual .box p{
+  font-size: 16px;
+  font-weight: 500;
+  width: 500px;
+  height: auto;
+  margin-top: 0px;
+  text-align: center;
+}
+
+.homePenjual .box a{
+  color: #DF20A3;
+  text-decoration: none;
+}
+
+.homePenjual .box .icon-main-penjual{
+  width: 150px;
+  height: 150px;
+}
+
+.homePenjual .btn-main-penjual{
+  background-color: #DF20A3;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-family: 'Quicksand';
+  font-weight: 700;
+  width: 400px;
+  height: auto;
+  margin-top: 20px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.homePenjual .btn-main-penjual:hover{
+  background-color: #c91d92;
+  color: #FFFFFF;
+}
+

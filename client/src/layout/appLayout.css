@@ -1,0 +1,28 @@
+/* Ensure that the html and body elements take up the full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    min-height: 100vh; /* Minimum height to cover the full viewport */
+}
+
+/* App layout container with flex display */
+.app-layout {
+    display: flex;
+    flex-direction: column;
+    /* min-height: 100vh; Minimum height to cover the full viewport */
+}
+
+/* Content area to take up remaining space */
+.AppLayout-content {
+    flex: 1; /* Grow to fill available space */
+    /* margin-bottom: 1000px; */
+    width: auto;
+    height: auto;
+}
+
+/* Footer to stay at the bottom */
+footer {
+    /* flex-shrink: 0;  */
+    margin-top: 71px;
+}
+
